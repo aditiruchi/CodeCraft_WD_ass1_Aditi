@@ -1,0 +1,108 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(135deg, #ff9966, #b45d9a);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    width: 450px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+h1 {
+    text-align: center;
+    color: #ffeb3b;
+    margin-bottom: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"] {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+}
+
+button {
+    padding: 15px;
+    background: linear-gradient(135deg,  #19d222, #5bea30);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #19d222, #5bea30);
+    transform: translateY(-3px);
+}
+
+#todos {
+    margin-top: 25px;
+}
+
+.todo-item {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.todo-item h3 {
+    margin: 0 0 5px;
+    font-size: 20px;
+    color: #ffeb3b;
+}
+
+.todo-item p {
+    margin: 0 0 10px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.todo-item button {
+    padding: 10px 15px;
+    background: linear-gradient(135deg, #ff5722, #ff7043);
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.todo-item button:hover {
+    background: linear-gradient(135deg, #e64a19, #f4511e);
+    transform: translateY(-3px);
+}
+
+.todo-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
